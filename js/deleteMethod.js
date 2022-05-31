@@ -1,0 +1,16 @@
+async function deleteCourse(idToDelete) {
+    console.log("id to delete " + idToDelete)
+    const deleteUrl = baseUrl + "/" + idToDelete
+    return fetch(deleteUrl, {
+        method: "DELETE",
+        headers: {
+            'Accept': 'application/json',
+            "Content-Type": "application/json"
+        }
+    }).then ((response) => {
+        console.log("Status deleted course is " + response.status);
+        refreshMainPage()
+    })
+}
+
+

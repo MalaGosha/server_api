@@ -20,9 +20,12 @@ server.post("/courses", (req, res, next) => {
   next();
 });
 
-server.p
+server.delete("/{id}", (req, res, next) => {
+  next();
+});
+
 server.use(router);
-const port = 3001;
+const port = 3002;
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });

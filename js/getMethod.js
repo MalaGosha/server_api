@@ -1,8 +1,8 @@
-const baseUrl = "http://localhost:3001/courses";
+const baseUrl = "http://localhost:3002/courses";
 
 async function getCourses() {
     const resp = await fetch(baseUrl);
-    try{
+    try {
         const courses = await handleResponse(resp);
         await generateHTML(courses);
     } catch (error) {
@@ -13,6 +13,7 @@ async function getCourses() {
 const generateHTML = async (courses) => {
     const table = document.getElementById("courses");
     courses.forEach((course)=> {
+        const idCourse = course.id;
         const urlLogo = "../assets/" + course.logoUrl;
         const row = table.insertRow(-1)
         row.insertCell(0).innerHTML = `<img 
@@ -26,11 +27,13 @@ const generateHTML = async (courses) => {
         row.insertCell(4).innerText = course.price;
         row.insertCell(5).innerText = course.rating;
         row.insertCell(6).innerHTML = `<button
-            class="buttons"
+            class="button delete"
             type="button"
+            onclick="deleteCourse(${idCourse})"
             />Usuń Kurs`
         row.insertCell(7).innerHTML = `<button
-            class="buttons"
+            id="recordEdit"
+            class="button edit"
             type="button"
             />Edytuj kurs`;
     })

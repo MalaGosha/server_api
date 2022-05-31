@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Workshop for my first project with server",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "prestart:api": "node server/createMockDb.js",
     "start:api": "node server/webApiServer.js"
