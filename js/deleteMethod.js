@@ -1,6 +1,5 @@
 async function deleteCourse(idToDelete) {
-    console.log("id to delete " + idToDelete)
-    const deleteUrl = baseUrl + "/" + idToDelete
+    const deleteUrl = baseUrl + "/" + idToDelete;
     return fetch(deleteUrl, {
         method: "DELETE",
         headers: {

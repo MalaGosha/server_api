@@ -20,9 +20,12 @@ server.post("/courses", (req, res, next) => {
   next();
 });
 
-server.delete("/{id}", (req, res, next) => {
+/*server.delete("/{id}", (req, res, next) => {
   next();
-});
+});*/
+
+
+
 
 server.use(router);
 const port = 3002;
