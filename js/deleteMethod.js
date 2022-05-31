@@ -7,9 +7,9 @@ async function deleteCourse(idToDelete) {
             'Accept': 'application/json',
             "Content-Type": "application/json"
         }
-    }).then ((response) => {
+    }).then (async (response) => {
         console.log("Status deleted course is " + response.status);
-        refreshMainPage()
+        await refreshMainPage();
     })
 }
 
