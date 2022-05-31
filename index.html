@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Course App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/images.css"/>
+    <link rel="stylesheet" href="css/mainPage.css"/>
+    <link rel="stylesheet" href="css/tableStyle.css"/>
+  </head>
+
+  <body>
+  <header>
+  </header>
+  <section>
+    <article>
+      <header>
+        <h1>Lista kursów</h1>
+        <h3>Szkolenia w ofercie Sii</h3>
+      </header>
+      <table id="courses" class="courses">
+        <thead>
+        <tr>
+          <th><button
+                  id="imageBtn"
+                  class="buttons btn-primary"
+                  style="width:100px"
+                  type="button"
+                  onclick="onLogoButtonClick()"
+          >
+            Ukryj logo
+          </button></th>
+          <th>Nazwa</th>
+          <th>Kategoria</th>
+          <th>Czas trwania</th>
+          <th>Cena</th>
+          <th>Ocena</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div>
+        <button class="buttons add" type="button">Dodaj kurs</button>
+      </div>
+    </article>
+  </section>
+  <div id="root"></div>
+  <footer>
+    <small>Created by: © MalaGosha. All rights reserved.</small>
+  </footer>
+  <script src="js/getMethod.js"></script>
+  <script>getCourses()</script>
+  <script src="js/buttonClick.js"></script>
+  </body>
+</html>
