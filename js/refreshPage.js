@@ -4,3 +4,4 @@ const refreshMainPage = async () => {
     await getCourses();
 }
 
+
