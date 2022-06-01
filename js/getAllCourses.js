@@ -33,8 +33,9 @@ const generateHTML = async (courses) => {
             />Usuń Kurs`
         row.insertCell(7).innerHTML = `<button
             id="recordEdit"
-            class="button edit"
+            class="button editCourse"
             type="button"
+            onclick="showPopupToEdit(${idCourse})"
             />Edytuj kurs`;
     })
 }

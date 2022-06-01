@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/images.css"/>
     <link rel="stylesheet" href="css/mainPage.css"/>
     <link rel="stylesheet" href="css/tableStyle.css"/>
-    <link rel="stylesheet" href="css/popupFormAdd.css"/>
+    <link rel="stylesheet" href="css/popupForm.css"/>
   </head>
 
   <body>
@@ -87,6 +87,46 @@
       </div>
     </form>
   </div>
+
+  <div class="popup_editCourse">
+    <form class="editCourse">
+      <div class="form_box">
+        <label for="edit_name">Nazwa kursu:</label>
+        <input id="edit_name" type="text" placeholder="Wpisz nazwę kursu"/>
+        <p class="error_add"></p>
+      </div>
+      <div class="form_box">
+        <label for="edit_category">Kategoria:</label>
+        <select id="edit_category">
+          <option value="0" disabled selected> -- wybierz kategorię -- </option>
+          <option value="Development">Development</option>
+          <option value="Testing">Testing</option>
+          <option value="Scrum">Scrum</option>
+          <option value="UX">UX</option>
+        </select>
+        <p class="error_add"></p>
+      </div>
+      <div class="form_box">
+        <label for="edit_duration">Czas trwania kursu:</label>
+        <input id="edit_duration" type="number" min="1" placeholder="Wpisz ilość dni trwania kursu"/>
+        <p class="error_add"></p>
+      </div>
+      <div class="form_box">
+        <label for="edit_price">Cena:</label>
+        <input id="edit_price" type="number" min="1" placeholder="Wpisz koszt kursu"/>
+        <p class="error_add"></p>
+      </div>
+      <div class="form_box">
+        <label for="edit_rating">Ocena:</label>
+        <input id="edit_rating" type="number" min="1" placeholder="Wpisz ocenę kursu"/>
+        <p class="error_add"></p>
+      </div>
+      <div class="edit_course">
+        <button class="button edit"><span>Edytuj kurs</span></button>
+      </div>
+    </form>
+  </div>
+
   <div id="root"></div>
   <footer>
     <small>Created by: © MalaGosha. All rights reserved.</small>
@@ -94,7 +134,7 @@
   <script src="js/getAllCourses.js"></script>
   <script>getCourses()</script>
   <script src="js/logoBtn.js"></script>
-  <script src="js/deleteMethod.js"></script>
+  <script src="js/deleteCourse.js"></script>
   <script src="js/editCourse.js"></script>
   <script src="js/refreshPage.js"></script>
   <script src="js/addCourse.js"></script>

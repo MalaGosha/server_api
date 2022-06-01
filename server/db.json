@@ -2,14 +2,12 @@
   "courses": [
     {
       "id": 1,
-      "name": "Zostań Developerem Front-end z opcją stażu w Sii",
+      "name": "Python",
       "category": "Development",
-      "price": 3669,
-      "duration": 8,
-      "description": "Zadaniem kursu jest przygotowanie Cię do podjęcia pracy w zawodzie Front-end Developera.",
-      "rating": 4.8,
-      "logoUrl": "/logos/javascript.svg",
-      "active": true
+      "price": "1234",
+      "duration": "2",
+      "rating": "4.3",
+      "logoUrl": "/logos/code.svg"
     },
     {
       "id": 2,
@@ -31,17 +29,6 @@
       "description": "Przygotowanie uczestnika kursu do pracy jako Tester Automatyzujący aplikacji webowych.",
       "rating": 4.5,
       "logoUrl": "/logos/scrum.png",
-      "active": true
-    },
-    {
-      "id": 4,
-      "name": "Zostań Developerem C#",
-      "category": "Development",
-      "price": 4499,
-      "duration": 10,
-      "description": "Szkolenie umożliwia uczestnikom opanować język C#, środowisko .NET, tworzyć proste aplikacje konsolowe, okienkowe i webowe.",
-      "rating": 5,
-      "logoUrl": "/logos/csharp.svg",
       "active": true
     },
     {
@@ -70,18 +57,9 @@
       "id": 7,
       "name": "Python",
       "category": "Development",
-      "price": "2343",
-      "duration": "12",
+      "price": "3432",
+      "duration": "23",
       "rating": "4.3",
-      "logoUrl": "/logos/code.svg"
-    },
-    {
-      "id": 8,
-      "name": "Test",
-      "category": "Testing",
-      "price": "3454",
-      "duration": "21",
-      "rating": "4.0",
       "logoUrl": "/logos/code.svg"
     }
   ],

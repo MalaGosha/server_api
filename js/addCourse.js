@@ -1,7 +1,6 @@
 const popupAddContact = document.querySelector('.popup_addCourse');
 const overlay = document.querySelector('.overlay');
 const createBtn = document.querySelector('.create_course');
-const courseLogo= document.querySelector('#add_logo');
 const courseName = document.querySelector('#add_name');
 const courseCategory = document.querySelector('#add_category');
 const courseDuration = document.querySelector('#add_duration ');

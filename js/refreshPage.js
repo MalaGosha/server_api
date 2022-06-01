@@ -26,3 +26,10 @@ const refreshMainPage = async () => {
 }
 
 
+window.addEventListener('keydown', async event => {
+    if (event.key === 'Escape') {
+        hidePopupAddCourse();
+        hidePopupEditCourse();
+    }
+})
+
